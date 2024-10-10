@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grain-background before:bg-slate-900 min-w-screen min-h-screen text-white"
+    class="grain-background before:bg-slate-950 min-w-screen min-h-screen text-gray-200"
   >
     <NuxtLayout>
       <NuxtPage />
