@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "@types/lodash": "^4.17.12",
+    "@vueuse/core": "^11.1.0",
+    "lodash": "^4.17.21",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"

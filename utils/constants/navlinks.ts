@@ -16,10 +16,6 @@ export default [
     path: "/img",
   },
   {
-    name: "writing",
-    path: "/articles",
-  },
-  {
     name: "contact",
     path: "/contact",
   },
