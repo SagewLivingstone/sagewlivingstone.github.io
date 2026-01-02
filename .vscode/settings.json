@@ -1,4 +1,4 @@
 {
-    "editor.formatOnSave": true,
-    "svg.preview.background": "editor"
+  "editor.formatOnSave": true,
+  "svg.preview.background": "editor"
 }

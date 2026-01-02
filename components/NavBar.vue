@@ -1,10 +1,10 @@
 <template>
   <div>
-    <ul class="text-red-400 font-bold text-lg flex flex-col items-end">
+    <ul class="flex flex-col items-end text-lg font-bold text-red-400">
       <li
         v-for="link in navlinks"
         :key="link.path"
-        class="hover:opacity-90 hover:underline decoration-2"
+        class="decoration-2 hover:underline hover:opacity-90"
       >
         <NuxtLink :to="link.path">{{ link.name }}</NuxtLink>
       </li>

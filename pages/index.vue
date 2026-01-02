@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full h-[100vh] flex justify-center items-center">
+  <div class="flex h-[100vh] w-full items-center justify-center">
     <div>
-      <ul class="text-red-400 font-bold text-xl flex gap-4">
+      <ul class="flex gap-4 text-xl font-bold text-red-400">
         <li
           v-for="link in navlinks"
           :key="link.path"
-          class="hover:opacity-90 hover:underline decoration-2"
+          class="decoration-2 hover:underline hover:opacity-90"
         >
           <NuxtLink :to="link.path">{{ link.name }}</NuxtLink>
         </li>
