@@ -8,7 +8,7 @@
         class="sidebar flex h-min w-min flex-col gap-4 rounded-r-md border-r-2 border-gray-200 pr-3"
       >
         <h1 class="text-right text-xl/6 font-bold">
-          <a href="/"> Sage Livingstone </a>
+          <a class="!text-bright hover:no-underline" href="/"> Sage Livingstone </a>
         </h1>
         <NavBar />
       </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="flex flex-col items-end text-lg font-bold text-red-400">
+    <ul class="flex flex-col items-end text-lg font-bold">
       <li
         v-for="link in navlinks"
         :key="link.path"
