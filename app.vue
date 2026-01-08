@@ -1,26 +1,37 @@
 <template>
-  <div
-    class="min-w-screen star-background min-h-screen bg-slate-950 text-gray-200"
-  >
+  <div class="min-w-screen min-h-screen bg-dark">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
 
-<style scoped>
-.star-background {
-  background-color: #01040e;
-  background-image: radial-gradient(2px 2px at 20% 30%, white, transparent),
-    radial-gradient(2px 2px at 60% 70%, white, transparent),
-    radial-gradient(1px 1px at 50% 50%, white, transparent),
-    radial-gradient(1px 1px at 80% 10%, white, transparent),
-    radial-gradient(2px 2px at 90% 60%, white, transparent),
-    radial-gradient(1px 1px at 33% 80%, white, transparent),
-    radial-gradient(1px 1px at 70% 40%, white, transparent),
-    radial-gradient(2px 2px at 15% 90%, white, transparent),
-    radial-gradient(1px 1px at 45% 20%, white, transparent);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+<style>
+/* Design system CSS variables */
+:root {
+  --color-dark: #191723;
+  --color-bright: #e0def2;
+  --color-primary: #db7692;
+  --color-secondary: #eec382;
+  --color-tertiary: #a7ced7;
+  --color-accent: #bfa8e3;
+  --color-accent-2: #e4bebb;
+  --color-accent-3: #43738c;
+}
+
+/* Global text and background defaults */
+html,
+body {
+  background-color: var(--color-dark);
+  color: var(--color-bright);
+}
+
+/* Global link styling */
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 </style>

@@ -7,11 +7,7 @@
         <p>
           I am a developer based out of Seattle, WA with a passion for hitting
           keys on my keyboard. I currently work at
-          <a
-            class="text-red-400 hover:underline"
-            href="https://geovisual-analytics.com/"
-            >GeoVisual Analytics</a
-          >
+          <a href="https://geovisual-analytics.com/">GeoVisual Analytics</a>
           where I spend my time ideating and developing Ag tools that help
           growers and reduce waste.
         </p>
