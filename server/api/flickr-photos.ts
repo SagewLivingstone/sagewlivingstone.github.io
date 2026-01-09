@@ -21,7 +21,7 @@ export default defineEventHandler(async (event): Promise<FlickrPhoto[]> => {
           method: "flickr.people.getPublicPhotos",
           api_key: apiKey,
           user_id: userId,
-          extras: "url_l,url_c,url_m,date_taken",
+          extras: "url_c,date_taken,width_c,height_c",
           per_page: 500, // Max allowed by Flickr
           page,
           format: "json",
@@ -60,10 +60,12 @@ export default defineEventHandler(async (event): Promise<FlickrPhoto[]> => {
       .map((photo) => ({
         id: photo.id,
         title: photo.title || "Untitled",
-        url: photo.url_l || photo.url_c || photo.url_m || "",
+        url: photo.url_c || "",
+        width: photo.width_c || 0,
+        height: photo.height_c || 0,
         dateTaken: photo.datetaken,
       }))
-      .filter((photo) => photo.url) // Filter out photos without URLs
+      .filter((photo) => photo.url && photo.width && photo.height) // Filter out photos without complete data
       .sort((a, b) => {
         // Sort by date taken, newest first
         if (!a.dateTaken || !b.dateTaken) return 0;

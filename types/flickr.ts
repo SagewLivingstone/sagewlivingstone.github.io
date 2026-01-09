@@ -2,6 +2,8 @@ export interface FlickrPhoto {
   id: string;
   title: string;
   url: string;
+  width: number;
+  height: number;
   dateTaken?: string;
 }
 
@@ -26,8 +28,8 @@ export interface FlickrApiPhoto {
   ispublic: number;
   isfriend: number;
   isfamily: number;
-  url_l?: string;
   url_c?: string;
-  url_m?: string;
+  width_c?: number;
+  height_c?: number;
   datetaken?: string;
 }
