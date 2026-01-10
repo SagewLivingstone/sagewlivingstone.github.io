@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col gap-4">
-    <h1 class="text-3xl font-bold">About Me</h1>
 
     <section>
       <div class="flex items-center gap-4">
@@ -17,13 +16,22 @@
             >
           </p>
           <p class="text-secondary">Seattle, WA</p>
-          <p>Tagline here</p>
+          <p class="text-sm italic">hi@sagelivingstone.com</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <p>You can <a href="#">view my resume here</a></p>
+    <section class="flex flex-col gap-4">
+      <h2>About me</h2>
+
+      <p>I'm a software engineer based in Seattle, WA. I enjoy working on hard problems and 
+        searching for untapped uses of technology.
+      </p>
+
+      <p>You can 
+        <a href="#">view my resume here</a>
+        and <a href="contact">contact me here</a>.
+      </p>
     </section>
   </div>
 </template>
