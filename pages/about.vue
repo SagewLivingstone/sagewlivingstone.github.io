@@ -28,8 +28,8 @@
         searching for untapped uses of technology.
       </p>
 
-      <p>You can 
-        <a href="#">view my resume here</a>
+      <p>You can
+        <a href="/Sage_Livingstone_Resume.pdf" target="_blank" rel="noopener noreferrer">view my resume here</a>
         and <a href="contact">contact me here</a>.
       </p>
     </section>
