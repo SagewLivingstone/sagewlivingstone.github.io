@@ -23,7 +23,7 @@
           id="name"
           v-model="formData.name"
           type="text"
-          class="rounded border-2 bg-dark p-2 text-bright transition-colors"
+          class="rounded border-2 bg-dark px-2 py-2 text-bright transition-colors"
           :class="
             hasSubmitted && formErrors.name
               ? 'border-primary focus:border-primary focus:outline-none'
@@ -45,7 +45,7 @@
           id="email"
           v-model="formData.email"
           type="email"
-          class="rounded border-2 bg-dark p-2 text-bright transition-colors"
+          class="rounded border-2 bg-dark px-2 py-2 text-bright transition-colors"
           :class="
             hasSubmitted && formErrors.email
               ? 'border-primary focus:border-primary focus:outline-none'
@@ -71,7 +71,7 @@
           id="phone"
           v-model="formData.phone"
           type="tel"
-          class="rounded border-2 bg-dark p-2 text-bright transition-colors"
+          class="rounded border-2 bg-dark px-2 py-2 text-bright transition-colors"
           :class="
             hasSubmitted && formErrors.phone
               ? 'border-primary focus:border-primary focus:outline-none'
@@ -96,7 +96,7 @@
           id="message"
           v-model="formData.message"
           rows="6"
-          class="resize-none rounded border-2 bg-dark p-2 text-bright transition-colors"
+          class="resize-none rounded border-2 bg-dark px-2 py-2 text-bright transition-colors"
           :class="
             hasSubmitted && formErrors.message
               ? 'border-primary focus:border-primary focus:outline-none'
@@ -116,7 +116,7 @@
       <button
         type="submit"
         :disabled="isSubmitting"
-        class="rounded px-4 py-2 font-bold text-bright transition-opacity"
+        class="rounded px-8 py-3 w-max font-bold text-bright transition-opacity"
         :class="
           isSubmitting
             ? 'cursor-not-allowed bg-gray-600 opacity-50'
