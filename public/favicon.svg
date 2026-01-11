@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Top-left: accent -->
+  <circle cx="8" cy="8" r="6" fill="#bfa8e3"/>
+
+  <!-- Top-right: primary -->
+  <circle cx="24" cy="8" r="6" fill="#db7692"/>
+
+  <!-- Bottom-left: secondary -->
+  <circle cx="8" cy="24" r="6" fill="#eec382"/>
+
+  <!-- Bottom-right: tertiary -->
+  <circle cx="24" cy="24" r="6" fill="#a7ced7"/>
+</svg>

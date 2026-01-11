@@ -116,7 +116,7 @@
       <button
         type="submit"
         :disabled="isSubmitting"
-        class="rounded px-8 py-3 w-max font-bold text-bright transition-opacity"
+        class="rounded px-8 py-2 w-max font-bold text-bright transition-opacity"
         :class="
           isSubmitting
             ? 'cursor-not-allowed bg-gray-600 opacity-50'

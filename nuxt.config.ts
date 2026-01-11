@@ -4,6 +4,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss"],
 
+  app: {
+    head: {
+      link: [
+        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      ],
+    },
+  },
+
   runtimeConfig: {
     // Private keys (server-side only, never exposed to client)
     flickrApiKey: process.env.NUXT_FLICKR_API_KEY,
