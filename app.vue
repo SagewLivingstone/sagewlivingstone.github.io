@@ -9,7 +9,7 @@
 <style>
 /* Design system CSS variables */
 :root {
-  --color-dark: #191723;
+  --color-dark: #0a0e19;
   --color-bright: #e0def2;
   --color-primary: #db7692;
   --color-secondary: #eec382;
