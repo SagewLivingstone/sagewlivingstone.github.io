@@ -15,20 +15,30 @@
               >GeoVisual Analytics</a
             >
           </p>
-          <p class="text-secondary">Seattle, WA</p>
-          <p class="text-sm italic">hi@sagelivingstone.com</p>
+          <p class="text-accent-2">Seattle, WA</p>
+          <p class="text-sm"><a href="mailto:hi@sagelivingstone.com">hi@sagelivingstone.com</a></p>
         </div>
       </div>
     </section>
 
     <section class="flex flex-col gap-4">
-      <h2>About me</h2>
-
-      <p>I'm a software engineer based in Seattle, WA. I enjoy working on hard problems and 
-        searching for untapped uses of technology.
+      <p>
+      I'm a software engineer based in Seattle, WA. I enjoy finding elegant solutions to hard problems,
+      making interactivity satisfying, and building tech that helps incentivize a better future.
       </p>
 
-      <p>You can
+      <p>Currently working at
+            <a
+              href="https://gva.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GeoVisual Analytics</a
+            >
+        on bringing modern digital platforms and remote sensing capabilities to commercial farming.
+      </p>
+
+      <p>
+        You can
         <a href="/Sage_Livingstone_Resume.pdf" target="_blank" rel="noopener noreferrer">view my resume here</a>
         and <a href="contact">contact me here</a>.
       </p>

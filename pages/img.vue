@@ -12,10 +12,13 @@
         class="relative"
         :style="{ height: `${layout.containerHeight}px` }"
       >
-        <div
+        <a
           v-for="(photo, index) in data"
           :key="photo.id"
-          class="absolute overflow-hidden"
+          :href="photo.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="absolute overflow-hidden cursor-pointer"
           :style="{
             top: `${layout.boxes[index].top}px`,
             left: `${layout.boxes[index].left}px`,
@@ -29,7 +32,7 @@
             class="h-full w-full object-cover"
             loading="lazy"
           />
-        </div>
+        </a>
       </div>
     </div>
 
@@ -77,7 +80,7 @@ const layout = computed(() => {
     containerWidth: containerWidth.value,
     containerPadding: 0,
     boxSpacing: 8,
-    targetRowHeight: 240,
+    targetRowHeight: 320,
   });
 });
 </script>

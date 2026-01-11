@@ -61,6 +61,7 @@ export default defineEventHandler(async (event): Promise<FlickrPhoto[]> => {
         id: photo.id,
         title: photo.title || "Untitled",
         url: photo.url_c || "",
+        link: `https://www.flickr.com/photos/${photo.owner}/${photo.id}/`,
         width: photo.width_c || 0,
         height: photo.height_c || 0,
         dateTaken: photo.datetaken,

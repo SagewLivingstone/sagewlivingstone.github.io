@@ -13,10 +13,10 @@
     </div>
 
     <!-- Form State -->
-    <form v-else @submit.prevent="handleSubmit" class="flex flex-col gap-6">
+    <form v-else @submit.prevent="handleSubmit" class="flex flex-col gap-4">
       <!-- Name Field -->
       <div class="flex flex-col gap-2">
-        <label for="name" class="text-lg font-bold">
+        <label for="name" class="font-bold">
           Name <span class="text-primary">*</span>
         </label>
         <input
@@ -38,7 +38,7 @@
 
       <!-- Email Field -->
       <div class="flex flex-col gap-2">
-        <label for="email" class="text-lg font-bold">
+        <label for="email" class="font-bold">
           Email <span class="text-primary">*</span>
         </label>
         <input
@@ -63,7 +63,7 @@
 
       <!-- Phone Field (Optional) -->
       <div class="flex flex-col gap-2">
-        <label for="phone" class="text-lg font-bold">
+        <label for="phone" class="font-bold">
           Phone
           <span class="text-sm font-normal text-gray-400">(optional)</span>
         </label>
@@ -89,7 +89,7 @@
 
       <!-- Message Field -->
       <div class="flex flex-col gap-2">
-        <label for="message" class="text-lg font-bold">
+        <label for="message" class="font-bold">
           Message <span class="text-primary">*</span>
         </label>
         <textarea

@@ -2,6 +2,7 @@ export interface FlickrPhoto {
   id: string;
   title: string;
   url: string;
+  link: string;
   width: number;
   height: number;
   dateTaken?: string;
