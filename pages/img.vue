@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-6 p-6">
+  <div class="flex flex-col gap-6">
     <div v-if="pending" class="text-secondary">Loading photos...</div>
 
     <div v-else-if="error" class="text-primary">
