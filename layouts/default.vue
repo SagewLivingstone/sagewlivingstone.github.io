@@ -1,4 +1,11 @@
 <!-- Default layout with centered content and fixed sidebar -->
+<script setup lang="ts">
+import { ref } from "vue";
+import { Menu, X } from "lucide-vue-next";
+
+const isNavOpen = ref(false);
+</script>
+
 <template>
   <div class="page-container relative flex h-full w-full flex-col items-center">
     <!-- Mobile header: fixed at top, visible only on mobile -->
@@ -8,25 +15,32 @@
           Sage Livingstone
         </a>
       </h1>
-      <a
-        href="/"
+      <button
+        @click="isNavOpen = true"
         class="flex items-center text-primary hover:opacity-80"
+        role="button"
+        aria-label="Open menu"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          class="h-6 w-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </a>
+        <Menu :size="24" />
+      </button>
+    </div>
+
+    <!-- Fullscreen navigation overlay -->
+    <div
+      v-if="isNavOpen"
+      class="fixed inset-0 z-[100] flex items-center justify-center bg-dark xl:hidden"
+    >
+      <!-- Close button (X) -->
+      <button
+        @click="isNavOpen = false"
+        class="absolute right-6 top-6 text-bright hover:opacity-80"
+        aria-label="Close menu"
+      >
+        <X :size="24" />
+      </button>
+
+      <!-- Navigation -->
+      <MobileNav @close="isNavOpen = false" />
     </div>
 
     <!-- Container for content centering -->
